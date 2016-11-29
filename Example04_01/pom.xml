@@ -14,8 +14,8 @@
   	</dependency>
   	<dependency>
   		<groupId>com.sap.cloud</groupId>
-  		<artifactId>neo-javaee6-wp-api</artifactId>
-  		<version>${sap.cloud.sdk.version}</version>
+        <artifactId>neo-javaee6-wp-api</artifactId>
+        <version>2.98.6</version>
   		<scope>provided</scope>
   	</dependency>
   	<dependency>
@@ -34,6 +34,13 @@
           <webXml>WebContent\WEB-INF\web.xml</webXml>
         </configuration>
       </plugin>
+      <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+              <source>1.7</source>
+              <target>1.7</target>
+            </configuration>
+        </plugin>
     </plugins>
   </build>
 </project>
